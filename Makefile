@@ -1,6 +1,9 @@
 CC = gcc
-SRC = hello.c
+SRC = hello.s
 BIN = hello
 
 hello: $(SRC)
 	$(CC) $(SRC) -o $(BIN)
+
+clean:
+	rm -f $(BIN)
